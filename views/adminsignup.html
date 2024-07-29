@@ -1,0 +1,63 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Signup</title>
+    <script src="../helper/Tailwind/tailwind.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link rel="stylesheet" href="../helper/signup.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Rancho&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="w-[100vw] h-[100vh] flex">
+        <div class="hidden lg:block w-[50vw] h-[100vh] bg-[#F97903] text-center">
+            <div class="mt-20">
+                <h1 class="text-6xl font-[600] text-white">Right Wisdom School</h1><br>
+                <p class="text-white text-4xl font-[400]" style="font-family: 
+                Rancho;">Building a whole child</p>
+                
+            </div>
+
+            <img class="h-[490px] w-[490px] mt-[40px] mx-[auto]" src="../helper/asset/c7fd297b-8381-4d3c-a795-f52f7ee2220a(1).png" alt="book image">
+        </div>
+
+        <div class="lg:w-[50vw] w-[100vw] h-[100vh] bg-white md:pt-24 pt-24 lg:px-20 px-4">
+            <h1 class="text-center lg:text-4xl text-2xl text-black  font-[700]">Admin Signup</h1><br><br>
+            <form action="../controllers/adminsignup.php" method="post" class="text-[#F97903] text-[20px] mt-[-20px]" >
+                <label for="">First Name:</label><br>
+               <input type="text" class="w-[500px] pl-[10px] h-[40px] border-2 border-[#F97903] focus:outline-none text-[#F97903] rounded-[5px] "   placeholder="Enter your name" name="firstname"><br>
+               <label for="">Last name:</label><br>
+               <input type="text" class="w-[500px] pl-[10px] h-[40px] border-2 border-[#F97903] focus:outline-none text-[#F97903] rounded-[5px] " placeholder="Enter your last name" name="lastname"><br>
+               <label for="">Gender:</label><br>
+               <select name="Option" name="gender" class="w-[500px] pl-[10px] h-[40px] border-2 border-[#F97903] focus:outline-none rounded-[5px] text-gray-400  " >Option
+                <option value="option">Option</option>
+               <option value="male">Male</option>
+               <option value="female">Female</option>
+               <option value="Others">Others</option>
+            </select><br>
+                <label for="">Email:</label><br>
+               <input type="email" class="w-[500px] pl-[10px] h-[40px] border-2 border-[#F97903] focus:outline-none text-[#F97903] rounded-[5px] " placeholder="Email" name="email"><br>
+                <label for="">password:</label><br>
+                <input type="password" class="w-[500px] pl-[10px] h-[40px] border-2 border-[#F97903] focus:outline-none text-[#F97903] rounded-[5px]  " placeholder="password" name="password"><br>
+                <label for="">Confirm Password:</label><br>
+                <input type="password" class="w-[500px] pl-[10px] h-[40px] border-2 border-[#F97903] focus:outline-none text-[#F97903] rounded-[5px]  " placeholder="password" name="confirmpassword"><br>
+                 <p class="text-black"> Already have an account <a href="adminlogin.html">Login</a></p>
+                <button class="bg-[#F97903] w-[350px] h-[50px] mt-1 rounded-[5px] text-white text-[20px] ml-[60px] "  name="submit" value="Signup">Signup</button>
+                   
+        
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <script src="../helper/Tailwind/tailwind.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</head>
+<body class="bg-orange-400 w-full h-screen">
+    <div class=" lg:hidden text-[30px] text-white md:w-[50px] w-[40px] h-[30px] md:h-[40px] mt-[20px] ml-[40px] md:mt-2" id="menu" ><ion-icon name="menu-outline"></ion-icon></div>
+    <!-- div for search -->
+    <div class="bg-white w-[85%] lg:w-[75%] h-[60px] mt-[20px] ml-[20px] lg:ml-[300px] rounded-[15px] flex pt-3" id="search">
+        <ion-icon name="school-outline" class="ml-[40px] mt-1 text-orange-400 font-[500] w-[40px] h-[40px]"></ion-icon>
+         <div class="flex ">
+            <input type="text" placeholder="search" class=" w-[50vw]  h-[40px] rounded-[50px] pl-[10px] ml-4   lg:ml-[40px]   placeholder:text-orange-400 placeholder:lg:text-2xl  font-[500] outline-none border-2 border-orange-400 ">
+            <ion-icon name="search-outline" class=" w-[10px] lg:w-[20px] h-[20px] text-orange-400 ml-[-50px] mt-[10px] font-[700]" ></ion-icon>
+            <ion-icon name="notifications-outline" class=" w-[15px] lg:w-[20px] h-[20px] text-orange-400 ml-[40px] lg:ml-[45px] mt-[10px]" ></ion-icon>
+            <ion-icon name="mail-open-outline" class=" text-orange-400 w-[15px] lg:w-[20px] lg:h-[20px] lg:ml-[10px] ml-[4px] mt-[10px]  "></ion-icon>
+             <ion-icon name="person-outline" class="mt-1 w-[15px] lg:w-[20px] h-[20px] text-orange-400 lg:ml-[10px] ml-[4px]  mt-[10px]"></ion-icon>
+             
+         </div>
+    </div>
+ <!-- End of search bar -->
+
+ <!-- Dashboard begins -->
+
+    <div class="block lg:flex  ">
+        <!-- sidebar -->
+        <div class="hidden lg:block  w-[80%] lg:w-[20%]  h-screen lg:h-[600px]  bg-orange-600 mt-[-77px] ml-[20px]  pl-[70px] text-white pt-[40px]  " id="dashboard">
+            <div class="bg-white w-[70px] text-orange-500 h-[70px] rounded-[50%] ml-[10px] mt-[-10px] text-center pt-4 font-[700] text-2xl" >
+                <p > RWS</p>
+               
+            </div>
+            <p class="text-2xl ml-[-20px] font-[500]">Right Wisdom</p>
+            <p class="text-2xl ml-4 font-[500]">School</p>        
+            <a href="dashboard.php"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="person-outline" class="mt-1"></ion-icon><p class="ml-1"> Teacher</p></div></a>
+            
+
+            <div class="flex  hover:font-[700] hover:text-[20px] mt-[20px] cursor-pointer " id="exam" ><p class="ml-1"><ion-icon name="people-outline" class="mt-1"></ion-icon> Student</p>
+            </div>
+          
+            <div class="hidden" id="timetable" >
+                <a href="subject.html"><p class="mt-1">Subject</p></a> 
+                 
+                 <a href="student.html"><p class="mt-1">Add Student</p></a> 
+                 <a href="viewallstudentteacher.php"><p class="mt-1">viewallstudent</p></a> 
+                 </div>
+                 <div class="flex  hover:font-[700] hover:text-[20px] mt-[20px] cursor-pointer " id="guide" ><p class="ml-1"><ion-icon name="person-outline" class="mt-1"></ion-icon>Guardian</p>
+                 </div>
+                 <div class="hidden" id="guard"   >
+                 <a href="guardian.html"><p class= "mt-1 ml-4">Add Guardian</p></a>
+               <a href="viewguardian.php"><p class= "mt-1 ml-4">view all Guardian</p></a>
+               </div>
+            <a href="studentlogout.php"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="exit-outline" class="mt-1"></ion-icon><p class="ml-1"> Logout</p></div></a>
+        </div>
+
+        
+        
+    <div class="pt-[20px] lg:pt-[0px]  ml-[20px] lg:ml-[10px]   mt-[20px] w-[85%] lg:w-[75%]   rounded-[20px] py-5 bg-white " id="profile"  > 
+        <p class="text-orange-400 text-2xl ml-16 mt-4">Student Form</p>
+        <div class="ml-16 mt-4">
+       <form action="../controllers/addstudent.php" method="post"  >
+            <input type="text" placeholder="Roll NO:" class="border-2 border-orange-400 w-[60vw] lg:w-[420px] h-[40px] pl-4 rounded-[5px] outline-none" name="rollno" >
+            <input type="text" placeholder="Age" class="border-2 border-orange-400 w-[60vw] lg:w-[420px] h-[40px] pl-4 lg:ml-4 mt-2 lg:mt-0 rounded-[5px] outline-none" name="age" ><br>
+            <input type="text" placeholder="Firstname" class="border-2 border-orange-400 w-[60vw] lg:w-[420px] h-[40px] pl-4 mt-2 rounded-[5px] outline-none" name="firstname" >
+            <input type="text" placeholder="Lastname" class="border-2 border-orange-400 w-[60vw] lg:w-[420px] h-[40px] pl-4 lg:ml-4 mt-2 rounded-[5px] outline-none" name="lastname" ><br>
+            <input type="text" placeholder="Address" class="border-2 border-orange-400 w-[60vw] lg:w-[420px] h-[40px] mt-2 pl-4 rounded-[5px] outline-none" name="homeaddress" >
+            <input type="text" placeholder="Email" class="border-2 border-orange-400 w-[60vw] lg:w-[420px] h-[40px] pl-4 lg:ml-4 mt-2 rounded-[5px] outline-none" name="email" >
+            
+            <div class="bg-gray-300 w-[200px] h-[200px] mt-3 rounded-[5px] pt-2 pl-2">
+                <p>Upload Image</p>
+            </div>
+             <input type="file" class="mt-2" name="image" ><br>
+            
+
+            
+            <button class="bg-orange-400 w-[150px] h-[40px] mt-4  ml-[400px] text-white text-2xl rounded-[10px]" value="Submit" name="submit" >Submit</button>
+        </form>
+    </div>
+   </div>
+    
+        
+    </div>
+        <!-- End of dashboard -->
+        <script>
+            const menu = document.getElementById("menu");
+        const dashboard= document.getElementById("dashboard");
+        const search = document.getElementById ("search");
+        const profile = document.getElementById("profile");
+        menu.addEventListener("click", function(){
+            dashboard.classList.toggle("hidden");
+            search.classList.toggle("hidden");
+            profile.classList.toggle("hidden");
+        })
+
+        const exam = document.getElementById("exam");
+        const timetable = document.getElementById("timetable");
+        exam.addEventListener("click", function(){
+            timetable.classList.toggle("hidden")
+        })
+
+        const guide = document.getElementById("guide");
+        const guard = document.getElementById("guard");
+        guide.addEventListener("click", function(){
+            guard.classList.toggle("hidden")
+        })
+        </script>
+        
+</body>
+</html>
+

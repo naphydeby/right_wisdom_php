@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student/view Result</title>
+    <script src="../helper/Tailwind/tailwind.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</head>
+<body class="bg-orange-400 w-full h-screen">
+    <div class=" lg:hidden text-[30px] text-white md:w-[50px] w-[40px] h-[30px] md:h-[40px] mt-[20px] ml-[40px] md:mt-2" id="menu" ><ion-icon name="menu-outline"></ion-icon></div>
+    <!-- div for search -->
+    <div class="bg-white w-[85%] lg:w-[75%] h-[60px] mt-[20px] ml-[20px] lg:ml-[300px] rounded-[15px] flex pt-3" id="search">
+        <ion-icon name="school-outline" class="ml-[40px] mt-1 text-orange-400 font-[500] w-[40px] h-[40px]"></ion-icon>
+         <div class="flex ">
+            <input type="text" placeholder="search" class=" w-[50vw]  h-[40px] rounded-[50px] pl-[10px] ml-4   lg:ml-[40px]   placeholder:text-orange-400 placeholder:lg:text-2xl  font-[500] outline-none border-2 border-orange-400 ">
+            <ion-icon name="search-outline" class=" w-[10px] lg:w-[20px] h-[20px] text-orange-400 ml-[-50px] mt-[10px] font-[700]" ></ion-icon>
+            <ion-icon name="notifications-outline" class=" w-[15px] lg:w-[20px] h-[20px] text-orange-400 ml-[40px] lg:ml-[45px] mt-[10px]" ></ion-icon>
+            <ion-icon name="mail-open-outline" class=" text-orange-400 w-[15px] lg:w-[20px] lg:h-[20px] lg:ml-[10px] ml-[4px] mt-[10px]  "></ion-icon>
+             <ion-icon name="person-outline" class="mt-1 w-[15px] lg:w-[20px] h-[20px] text-orange-400 lg:ml-[10px] ml-[4px]  mt-[10px]"></ion-icon>
+             
+         </div>
+    </div>
+ <!-- End of search bar -->
+
+ <!-- Dashboard begins -->
+
+    <div class="block lg:flex  ">
+        <!-- sidebar -->
+        <div class="hidden lg:block  w-[80%] lg:w-[20%]  h-screen lg:h-[600px]  bg-orange-600 mt-[-77px] ml-[20px]  pl-[70px] text-white pt-[40px]  " id="dashboard">
+            <div class="bg-white w-[70px] text-orange-500 h-[70px] rounded-[50%] ml-[10px] mt-[-10px] text-center pt-4 font-[700] text-2xl" >
+                <p > RWS</p>
+               
+            </div>
+            <p class="text-2xl ml-[-20px] font-[500]">Right Wisdom</p>
+            <p class="text-2xl ml-4 font-[500]">School</p>        
+            <a href="student.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><p class="ml-1"><ion-icon name="people-outline" class="mt-1"></ion-icon> Student</p></div></a>
+            <div class="flex  hover:font-[700] hover:text-[20px] mt-[20px] cursor-pointer " id="exam" ><p class="ml-1"><ion-icon name="people-outline" class="mt-1"></ion-icon> Exams</p>
+         </div>
+         <div class="hidden" id="timetable" >
+            <a href="subject.html"><p class="mt-1">Subject</p></a> 
+             <a href="viewexamsResult.html"><p class="mt-1" >view exam schedule</p></a> 
+             <a href="viewexamschedule.html"><p class="mt-1">Examination</p></a> 
+             </div>
+
+            <a href="dashboard.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="person-outline" class="mt-1"></ion-icon> Teacher</p></div></a>
+                        
+            <a href="guardian.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="person-outline" class="mt-1"></ion-icon> Guardian</p></div></a>
+            <a href="studentlogout.php"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="exit-outline" class="mt-1"></ion-icon><p class="ml-1"> Logout</p></div></a>
+        </div>
+        
+        
+    <div class="pt-[20px] lg:pt-[0px]  ml-[20px] lg:ml-[10px]   mt-[20px] w-[85%] lg:w-[75%]   rounded-[20px] py-5 bg-white " id="profile"  > 
+        <p class="text-orange-400 text-2xl ml-16 mt-4">View Exams Result</p>
+        <div class="ml-[20px] mt-4  ">
+            <form action="">
+                <div class="flex ">
+                <div>
+                <label for="" class="ml-4 font-bold "  >Exam</label><br>
+                <select name="" id="" class="w-[450px] h-[30px] border-2 border-orange-400 focus:outline-none pl-4 " >
+                    <option value="">Select Term</option>
+                    <option value="">1st Term</option>
+                    <option value="">2nd Term</option>
+                    <option value="">3rd Term</option>
+                </select></div>
+                <div>
+                    <p class="ml-[50px] font-bold  ">Student Id</p>
+                    <input type="text" placeholder="037" class="w-[460px] h-[30px] ml-8 border-2 border-orange-400 focus:outline-none pl-4 ">
+                </div>
+            </div>
+                <div class="mt-4 flex justify-between w-[950px]" >
+                    <div>
+                        <label for="" class="ml-4 font-bold" >Class</label><br>
+                        <select name="" id="" class="w-[250px] h-[30px] border-2 border-orange-400 focus:outline-none pl-4 ">
+                            <option value="">Select Class</option>
+                            <option value="">JSS1</option>
+                            <option value="">JSS2</option>
+                            <option value="">JSS3</option>
+                            <option value="">SS1</option>
+                            <option value="">SS2</option>
+                            <option value="">JSS3</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="" class="ml-4 font-bold" >Class Division / Arm</label><br>
+                        <select name="" id="" class="w-[250px] h-[30px] border-2 border-orange-400 focus:outline-none pl-4 ">
+                            <option value="">Select Class Division</option>
+                            <option value="">Art</option>
+                            <option value="">Commercial</option>
+                            <option value="">Science</option>
+                           
+                        </select>
+                    </div>
+                    <div>
+                        
+                        <label for="" class="ml-4 font-bold " >Subjects</label><br>
+                        <select name="" id="" class="w-[420px] h-[30px] border-2 border-orange-400 focus:outline-none pl-4 ">
+                            <option value="">Select Subjects</option>
+                            <option value=""> Mathematics </option>
+                            <option value=""> English</option>
+                            <option value=""> Physics</option>
+                            <option value=""> Yoruba</option>
+                            <option value=""> Chemistry</option>
+                            <option value=""> Civic Education </option>
+                            <option value=""> Agric Science</option>
+                         </select>
+                    </div>
+                   
+                </div> <br>
+                <label for="" class="ml-4 font-bold  "  >Examamination mode</label><br>
+                <select name="" id="" class="w-[950px] h-[30px] border-2 border-orange-400 focus:outline-none pl-4 " >
+                    <option value="">Select mode</option>
+                    <option value="">Online</option>
+                    <option value="">On-site</option>
+                    <option value="">Hybrid</option>
+                </select>
+                <div class=" mt-4 flex justify-between w-[950px] " >
+                   <div>
+                    <p class="font-bold ml-4">Date</p>
+                    <input type="text" class="w-[220px] h-[30px] bg-transparent border-2 border-orange-400 focus:outline-none" >
+                </div>
+                <div>
+                    <p class="font-bold ml-4">Exam Duration (mins)</p>
+                    <input type="text" class="w-[220px] h-[30px] bg-transparent border-2 border-orange-400 focus:outline-none" >
+                </div>
+                <div>
+                    <p class="font-bold ml-4">Start Time</p>
+                    <input type="text" class="w-[220px] h-[30px] bg-transparent border-2 border-orange-400 focus:outline-none" >
+                </div>
+                <div>
+                    <p class="font-bold ml-4">Ending Time</p>
+                    <input type="text" class="w-[220px] h-[30px] bg-transparent border-2 border-orange-400 focus:outline-none" >
+                </div>
+                </div>
+              <div class="flex justify-between w-[950px]">
+                <div class=" mt-4">
+                    <p class="font-bold ml-4">Supervisor in Charge</p>
+                    <select name="" id="" class="w-[470px] h-[30px] border-2 border-orange-400 focus:outline-none pl-4 ">
+                        >
+                        <option value=""> Select Supervisor</option>
+                        <option value="">Mr.Shobowale</option>
+                        <option value="">Mr.Okpara</option>
+                        <option value="">Mrs.Dickson</option>
+                        <option value="">Mr.Alex</option>
+                    </select>
+
+                </div>
+                <div class=" mt-4">
+                    <p class="font-bold ml-4">Exam Venue</p>
+                    <select name="" id="" class="w-[470px] h-[30px] border-2 border-orange-400 focus:outline-none pl-4 ">
+                        >
+                        <option value="">Select Venue</option>
+                        <option value="">Online</option>
+                        <option value="">Ikorodu</option>
+                        </select>
+                         </div>
+                         </div>
+                         <div class="mt-8 ml-[750px] " >
+                            <button class="w-[80px] h-[30px] rounded-md bg-orange-400 text-white border-2 border-orange-400 focus:outline-none pl-2 ">
+                                Save</button>
+                            <button type="reset" class="w-[80px] h-[30px] rounded-md bg-orange-400 text-white border-2 border-orange-400 focus:outline-none pl-2 ">
+                                Reset</button>
+                         </div>
+            </form>
+                  
+    </div>
+   </div>
+    
+        
+    </div>
+        <!-- End of dashboard -->
+        <script>
+            const menu = document.getElementById("menu");
+        const dashboard= document.getElementById("dashboard");
+        const search = document.getElementById ("search");
+        const profile = document.getElementById("profile");
+        menu.addEventListener("click", function(){
+            dashboard.classList.toggle("hidden");
+            search.classList.toggle("hidden");
+            profile.classList.toggle("hidden");
+        })
+
+        const exam = document.getElementById("exam");
+        const timetable = document.getElementById("timetable");
+        exam.addEventListener("mouseover", function(){
+            timetable.classList.toggle("hidden")
+        })
+        </script>
+        
+</body>
+</html>
+

@@ -1,0 +1,57 @@
+h1{color: rgb(79, 79, 190)
+    ;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+   'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-right: 400px;
+    margin-top: 20px;     
+   }
+
+.div{width: 500px;
+      height: 800px;
+      float: right;
+      margin-right: 400px;
+      border-radius:10px; 
+    }
+
+ hr{width: 550px;
+    margin-right: 350px;
+   }
+
+label{font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 25px;
+      text-transform: capitalize;
+    }
+
+.input{width: 500px;
+      height:15px;
+      border-radius: 5px;
+      font-size: 20px;
+      padding: 15px;
+      text-transform: capitalize;
+     }
+
+.check{width: 15px;
+       height: 15px;
+      }
+
+.btn{width: 80px;
+     height: 35px;
+     font-size: 20px;
+     background-color: rgb(104, 104, 199);
+     color: white;
+     border-radius: 5px; 
+     margin-left: 70px;
+    }
+
+.sub{width: 175px;
+     height: 35px;
+     font-size: 20px;
+     margin-left: 10px;
+     color: blue;
+     border-radius: 5px;
+    }
+
+  p{font-size: 20px;
+    margin-left: 80px;
+   }

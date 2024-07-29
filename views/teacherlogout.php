@@ -1,0 +1,119 @@
+
+
+ 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacherlogout</title>
+    <script src="../helper/Tailwind/tailwind.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</head>
+<body class="bg-orange-400 w-full h-screen">
+    <div class=" lg:hidden text-[30px] text-white  w-[40px] h-[30px]  mt-[20px] ml-[40px] " id="menu" ><ion-icon name="menu-outline"></ion-icon></div>
+    <!-- div for search -->
+    <div class="bg-white w-[85%] lg:w-[75%] h-[60px] mt-[20px] ml-[20px] lg:ml-[300px] rounded-[15px] flex pt-3" id="search">
+        <div >
+            <ion-icon name="exit-outline" class=" ml-[10px] lg:ml-[40px] mt-1 text-orange-400 font-[500] w-[40px] h-[40px]" ></ion-icon>
+        </div>
+         <div class="flex ">
+            <input type="text" placeholder="search" class=" w-[50vw]  h-[40px] rounded-[50px] pl-[10px] ml-4   lg:ml-[40px]   placeholder:text-orange-400 placeholder:lg:text-2xl  font-[500] outline-none border-2 border-orange-400 ">
+            <ion-icon name="search-outline" class=" w-[10px] lg:w-[20px] h-[20px] text-orange-400 ml-[-50px] mt-[10px] font-[700]" ></ion-icon>
+            <ion-icon name="notifications-outline" class=" w-[15px] lg:w-[20px] h-[20px] text-orange-400 ml-[40px] lg:ml-[45px] mt-[10px]" ></ion-icon>
+            <ion-icon name="mail-open-outline" class=" text-orange-400 w-[15px] lg:w-[20px] lg:h-[20px] lg:ml-[10px] ml-[4px] mt-[10px]  "></ion-icon>
+             <ion-icon name="person-outline" class="mt-1 w-[15px] lg:w-[20px] h-[20px] text-orange-400 lg:ml-[10px] ml-[4px]  mt-[10px]"></ion-icon>
+             
+         </div>
+    </div>
+
+ <!-- End of search bar -->
+
+ <!-- Dashboard begins -->
+
+    <div class="block lg:flex  ">
+        <!-- sidebar -->
+        <div class="hidden lg:block  w-[80%] lg:w-[20%]  h-screen lg:h-[600px]  bg-orange-600 mt-[-77px] ml-[20px]  pl-[70px] text-white pt-[40px]  " id="dashboard">
+            <div class="bg-white w-[70px] text-orange-500 h-[70px] rounded-[50%] ml-[10px] mt-[-10px] text-center pt-4 font-[700] text-2xl" >
+                <p > RWS</p>
+               
+            </div>
+            <p class="text-2xl ml-[-20px] font-[500]">Right Wisdom</p>
+            <p class="text-2xl ml-4 font-[500]">School</p>        
+            <a href="dashboard.php"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="person-outline" class="mt-1"></ion-icon> Teacher</p></div></a>
+            <a href="student.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="people-outline" class="mt-1"></ion-icon> Student</p></div></a>
+            
+            <a href="guardian.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="person-outline" class="mt-1"></ion-icon><p class="ml-1"> Guardian</p></div></a>
+            <a href="teacherlogout.php"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="exit-outline" class="mt-1"></ion-icon><p class="ml-1"> Logout</p></div></a>
+        </div>
+        
+        
+    <div class="pt-[20px] lg:pt-[0px]  ml-[20px] lg:ml-[10px]   mt-[20px] w-[85%] lg:w-[75%]   rounded-[20px] py-5 bg-white" id="profile"  > 
+        <div class=" w-[80vw] lg:w-full ml-[10px] lg:ml-[20px] md:ml-[40px] flex justify-between mt-6 text-orange-400">
+        <p class="text-2xl font-[500]" >Logout!!!</p>
+        <div class="mr-4" >
+            <p>Mrs. Remi Makanjuola</p>
+            <p class="ml-10">Teacher</p>
+          </div>
+        </div>
+        <div class="block  lg:flex justify-between pt-[20px] lg:pt-[10px]  pl-1 lg:pl-[10px] min-w-full container  lg:ml-4 text-orange-400   ">
+        <div class="bg-white border-8 border-orange-400 w-[130px] h-[130px] rounded-[50%] shadow" >
+        <p class="mt-6 ml-2" >Total Students</p>
+        <p class="ml-8">30,000</p>
+
+    </div>
+    <div class="bg-white border-8 border-orange-400 w-[130px] h-[130px] rounded-[50%] shadow" >
+        <p class="mt-6 ml-2" >Total Students</p>
+        <p class="ml-8">Present</p>
+        <p class="ml-8">20,000</p>
+     </div>
+    <div class="bg-white border-8 border-orange-400 w-[130px] h-[130px] rounded-[50%] shadow" >
+        <p class="mt-6 ml-2" >Total Students</p>
+        <p class="ml-8">Absent</p>
+        <p class="ml-8">10,000</p>
+    </div>
+        <div class=" bg-white border-8 border-orange-400 w-[130px] h-[130px] rounded-[50%] mr-10 shadow">
+            <p class="mt-6 ml-4" > Second Term</p>
+            <p class="ml-10">Result</p>
+            
+    
+    </div>
+    </div>
+    
+        <div class=" text-center block lg:flex justify-between lg:mt-[60px] w-[40vw] lg:w-full  mt-[-440px] ml-[140px] lg:ml-0  ">
+            <div class="ml-[40px] text-orange-400 text-center" >
+              <h1 class=" text-[15px]lg:text-[20px]  font-[700] ">Information For</h1>
+              <a href=""><p class="mt-[5px]" >Current Students </p></a>
+                  <a href=""><p >Alumni</a> 
+                    <a href=""><p >Families</a> 
+                        <a href=""><p >Media</a> 
+                            
+                  </div> 
+        <div class="ml-[40px] text-orange-400 sm:mt-[10px] text-center">
+          <h1 class="text-[15px] lg:text-[20px]  font-[700] ">Quick Links</h1>
+          <a href=""><p class="mt-[5px]">Academic Calendar</p></a>
+          <a href=""><p>Bookshop</p></a>
+          <a href=""><p>Library</p></a>
+          
+        </div> 
+        <div class=" mr-0 lg:mr-[30px] text-orange-400 sm:mt-[10px]text-center ">
+          <h1 class=" text-[15px] lg:text-[20px]  font-[700] ">Contact</h1>
+          <a href=""><p class="mt-[5px]">Financial Aid</p></a>
+          <a href=""><p>Human Resources</p></a>
+          <a href=""><p>IT</p></a> 
+          <a href=""><p >Directory</a> 
+        </div> 
+          </div>
+          <form action="../controllers/teacherlogout.php" method="post" >
+          <button class="bg-orange-400 text-white w-[150px] h-[40px] ml-[130px] lg:ml-[400px] mt-12 lg:mt-3 rounded-[20px]
+          text-2xl" name="submit" value="Logout" >Logout</button>
+        </form>
+    </div>
+        <!-- End of dashboard -->
+        
+</body>
+</html>
