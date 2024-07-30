@@ -5,16 +5,16 @@ if(isset($_POST['submit'])){
     $password = mysqli_real_escape_string($conn, $_POST['password']);
 
 // Query to the hashed password for the given email
-$encryptQuery = "SELECT * FROM admin WHERE email = '$email'";
+$encryptQuery = "SELECT * FROM admin_signup WHERE email = '$email'";
 $encryptResult = mysqli_query($conn, $encryptQuery);
 $encryptRow = mysqli_num_rows($encryptResult);
 
 if($encryptRow){
     // fetch the result
-    $emailRow = mysqli_fetch_assoc($encryptResult);
-    $hashpassword = $emailRow['password'];
+    // $emailRow = mysqli_fetch_assoc($encryptResult);
+    // $hashpassword = $emailRow['password'];
     // Verify password
-    if(password_verify($password, $hashpassword)){
+    // if(password_verify($password, $hashpassword)){
         session_start();
         $_SESSION['email'] = $email;
         echo "<script>alert('login successful');window.location = '../views/admindashboard.php'</script>";
@@ -46,5 +46,5 @@ if($encryptRow){
     //     echo "<script>alert('login failed');window.location = '../views/adminlogin.html'</script>";
     // }
     
-}
+
 ?>

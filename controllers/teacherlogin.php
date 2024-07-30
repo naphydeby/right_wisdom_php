@@ -5,7 +5,7 @@ if(isset($_POST['submit'])){
     $password = mysqli_real_escape_string($conn, $_POST['password']);
 
 
-    $query = "SELECT * FROM admin Where email = '$email' AND password = '$password'";
+    $query = "SELECT * FROM admin_signup Where email = '$email' AND password = '$password'";
     $result = mysqli_query($conn, $query);
     $rows = mysqli_num_rows($result);
     if($rows > 0){
